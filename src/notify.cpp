@@ -291,7 +291,7 @@ LRESULT WINAPI notify_proc(notify_icon_t* notify,HWND hWnd, UINT msg, WPARAM wPa
             DEBUG("WM_USER\n");
         }break;
         default: {
-            DEBUG("Event %d 0x%x iconId %d x %d, y %d\n",event,event,iconId,xAnchor,yAnchor);
+            //DEBUG("Event %d 0x%x iconId %d x %d, y %d\n",event,event,iconId,xAnchor,yAnchor);
         }
     }
     

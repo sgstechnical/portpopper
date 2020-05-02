@@ -13,7 +13,6 @@ int main (int argc, char** argv)
 {
     TEMP_BUFF(buf);
     SETBUF(); // Sets the stdout buffer to flush per character
-    
     WNDCLASSEXA wc ={};
     wc.cbSize=sizeof(WNDCLASSEX);
     wc.style=CS_CLASSDC;
