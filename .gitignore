@@ -1,0 +1,8 @@
+
+*.obj
+*.exe
+*.bat
+*.4coder
+*.png
+/tmp
+todo.txt
