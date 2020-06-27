@@ -49,7 +49,11 @@ int main (int argc, char** argv)
     
     RegisterHotKey(hWnd,1,MOD_ALT,VK_F5);
     
-    if (notify_init(&Notify,hWnd,&APP_GUID,"PortPopper",ID_MAIN_ICON)){
+    UUID appGuid = {};
+    //RPC_STATUS UuidCreate(&appGuid);
+    UuidCreate(&appGuid);
+    
+    if (notify_init(&Notify,hWnd,&appGuid,"PortPopper",ID_MAIN_ICON)){
         DEBUG("Failed to create notify icon\n");
         return -1;
     }

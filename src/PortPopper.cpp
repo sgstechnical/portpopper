@@ -31,6 +31,7 @@ For more information, please refer to <https://unlicense.org>
 #pragma comment(lib,"comctl32.lib") //Required for common controls
 #pragma comment(lib,"shell32.lib") //Required for NotifyIcon
 #pragma comment(lib,"SetupApi.lib") //Required for device enumeration
+#pragma comment(lib,"Rpcrt4.lib") //Required for UUID creation
 
 
 //Windows headers
@@ -73,14 +74,16 @@ typedef enum{
 }cust_message_index_t;
 
 
+#if 0 //This is now created dynamically at start up, still not that good
 //GUID for this app. Windows uses this as a unique Id for notification's
 //It is just randomly generated, but if you change the app name, you many need to change this GUID
 static const GUID APP_GUID ={ /* 63de3f12-3af6-4ad8-a691-849881fa0be0 */
-    0x63de3f41,
+    0x63de3f71,
     0x3af6,
     0x4ad8,
     {0xa6,0x91,0x84,0x98,0x81,0xfa,0x0b,0xe0}
 };
+#endif
 
 
 //This is the GUID for the serial port device class, from Microsoft
