@@ -47,7 +47,7 @@ int main (int argc, char** argv)
     
     devices_getAvailableSerialPorts(hWnd,&DeviceList);
     
-    RegisterHotKey(hWnd,1,MOD_ALT,VK_F5);
+    //RegisterHotKey(hWnd,1,MOD_ALT,VK_F5);
     
     UUID appGuid = {};
     //RPC_STATUS UuidCreate(&appGuid);
